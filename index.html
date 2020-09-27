@@ -9,20 +9,23 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-
   </head>
     <body>
       <!-- TOPBAND -->
-      <div class="color">
+      <!-- <div class="color">
         <div class="container">
           <div class="topband">
             <a class="primary_color" href="">KEN CAMINO | DESARROLLADORA WEB FRONTEND</a>
           </div>
         </div>
-      </div>
+      </div>  -->
       <!-- LOGO -->
       <!-- <div class="row hidden-sm hidden-xs">
         <div class="container">
@@ -39,9 +42,8 @@
         </div>
       </div> -->
       <!-- MENU -->
-      <nav id="myNavbar" class="navbar secondary_color" role="navigation">
+      <nav id="myNavbar" class="navbar menu" role="navigation">
         <div class="navbar-header visible-xs"> 
-        <!-- <img class="logo" src="img/logo.png" alt="Logo"> -->
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar light_primary_color"></span>
@@ -54,134 +56,95 @@
             <div class="">
               <ul id="menu" class="nav navbar-nav st-menu st-menupage">
                 <li class="active fondo_color_b">
-                  <a class="terceary_color" href="index.html">INICIO</a>
+                  <a href="index.html" class="terceary_color" >INICIO</a>
                 </li>
                 <li class="dropdown fondo_color_b">
                   <a href="#portafolio" class="dropdown-toggle terceary_color" data-toggle="dropdown">PORTAFOLIO</a>
                 </li>
-                <!-- <li class="fondo_color_b">
-                  <a class="terceary_color" href="#contacto">CONTACTO</a>
-                </li> -->
+                <li class="dropdown fondo_color_b">
+                  <a href="#blog" class="dropdown-toggle terceary_color" data-toggle="dropdown">BLOG</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
-      </nav>
+      </nav> 
       <!-- FOTO -->
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:20px;">
-          <div class="nombre">
-            <h2>KEN CAMINO</h2> 
+        <div class="container">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding:20px;">
+            <div class="center">
+              <img src="img/yosi.png" class="img-fluid"alt="Imagen">  
+            </div>   
           </div> 
-          <div class="center">
-            <img src="img/yosi.png" class="img-fluid" alt="Imagen">  
-          </div>   
-          <div class="social">     
-            <p>
-              Habilidad para el diseño web, capaz de transformar un <br>
-              archivo de photoshop  en código HTML, CSS, JavaScript,<br>  
-              Desarrolladora web Frontend Junior con la tecnologia <br>
-              React.js,  Habilidad para el diseño de Wireframes y <br>  
-              Prototipos web con las herramientas, <br> Balsamiq Mockup, Figma, Photoshop.       
-            </p>
-            <!-- <p>
-              Desarrolladora web Frontend Junior con la tecnologia 
-              React.js . 
-            </p>
-            <p>
-              Habilidad para el diseño de Wireframes y Prototipos web <br>
-              con las herramientas, Balsamiq Mockup, Figma, Photoshop.
-            </p>               -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="social">     
+              <h2 >KEN CAMINO</h2> 
+              <p>
+                Habilidad para el diseño web, capaz de transformar un <br>
+                archivo de photoshop  en código HTML, CSS, JavaScript,<br>  
+                Desarrolladora web Frontend Junior con la tecnologia <br>
+                React.js,  Habilidad para el diseño de Wireframes y <br>  
+                Prototipos web con las herramientas, <br> Balsamiq Mockup, Figma, Photoshop.       
+              </p>               -
+            </div>
+            <div class="social">       
+              <a href="https://www.facebook.com/kenyuri.camino" target="_blank" 
+                class="fa fa-facebook-official"></a>      
+              <a href="https://www.linkedin.com/in/kenyuri-camino-b2178599/" target="_blank" 
+                class="fa fa-linkedin"></a>       
+              <a href="https://www.instagram.com/kenyuric/?hl=es-la" target="_blank" 
+                class="fa fa-instagram"></a>      
+              <a href="https://twitter.com/kenyuric" target="_blank" 
+                class="fa fa-twitter"></a>       
+              <a href="https://www.youtube.com/channel/UCgsK0816qD8YZ8Loy0Y_Jlw?view_as=subscriber" 
+                class="fa fa-youtube"></a>      
+              <a href="https://github.com/Kenyurina" target="_blank" rel=""
+                class="fa fa-github"></a>    
+            </div>
           </div>
-          <div class="social">       
-            <a href="https://www.facebook.com/kenyuri.camino" target="_blank" 
-              class="fa fa-facebook-official"></a>      
-            <a href="https://www.linkedin.com/in/kenyuri-camino-b2178599/" target="_blank" 
-              class="fa fa-linkedin"></a>       
-            <a href="https://www.instagram.com/kenyuric/?hl=es-la" target="_blank" 
-              class="fa fa-instagram"></a>      
-            <a href="https://twitter.com/kenyuric" target="_blank" 
-              class="fa fa-twitter"></a>       
-            <a href="https://www.youtube.com/channel/UCgsK0816qD8YZ8Loy0Y_Jlw?view_as=subscriber" 
-              class="fa fa-youtube"></a>      
-            <a href="https://github.com/Kenyurina" target="_blank" rel=""
-              class="fa fa-github"></a>    
-            <!-- <ul>
-              <li>
-                <a href="https://www.facebook.com/kenyuri.camino" target="_blank" 
-                class="fa fa-facebook-official"></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/kenyuri-camino-b2178599/" target="_blank" 
-                class="fa fa-linkedin"></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/kenyuric/?hl=es-la" target="_blank" 
-                class="fa fa-instagram"></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/kenyuric" target="_blank" 
-                class="fa fa-twitter"></a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/channel/UCgsK0816qD8YZ8Loy0Y_Jlw?view_as=subscriber" 
-                class="fa fa-youtube"></a>
-              </li>
-              <li>
-                <a href="https://github.com/Kenyurina" target="_blank" rel=""
-                class="fa fa-github"></a>
-              </li>
-            </ul> -->
-          </div>
-        </div> 
+        </div>
       </div>
       <!-- ACERCA DE MI -->
-      <div class="row secondary_color">
+      <div class="row">
         <div class="container" style="padding:20px;">
           <div class="titulo">
-            <h5 class="terceary_color">HABILIDADES</h5>
-            <!-- <hr class="borde">             -->
+            <h5>HABILIDADES</h5>     
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <p class="terceary_color">HTML</p>
-            <div class="">
+            <div class="skill-f">
+              <p class="primary_color">HTML</p>
               <div class="skills html">100%</div>
-            </div>
-            <p class="terceary_color">CSS</p>
-            <div class="">
+
+              <p class="primary_color">CSS</p>
               <div class="skills css">80%</div>
-            </div>
-            <p class="terceary_color">JavaScript</p>
-            <div class="">
+
+              <p class="primary_color">JavaScript</p>
               <div class="skills js">50%</div>
-            </div>
-            <p class="terceary_color">React.js</p>
-            <div class="">
+
+              <p class="primary_color">React.js</p>
               <div class="skills php">20%</div>
-            </div>
+           </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <p class="terceary_color">BALSAMIQ MOCKUP</p>
-            <div class="">
+            <div class="skill-f">
+              <p class="primary_color">BALSAMIQ MOCKUP</p>
               <div class="skills2 html2">100%</div>
-            </div>
-            <p class="terceary_color">FIGMA</p>
-            <div class="">
+
+              <p class="primary_color">FIGMA</p>
               <div class="skills2 css2">80%</div>
-            </div>
-            <p class="terceary_color">PHOTOSHOP</p>
-            <div class="">
+
+              <p class="primary_color">PHOTOSHOP</p>
               <div class="skills2 js2">80%</div>
-            </div>
-            <p class="terceary_color">UX/UI</p>
-            <div class="">
+
+              <p class="primary_color">UX/UI</p>
               <div class="skills2 php2">50%</div>
             </div>
           </div>
         </div>
       </div>  
       <!-- PORTAFOLIO -->
-      <div class="row color"  id="portafolio"  style="padding:20px;">
+      <div class="row" id="portafolio" style="padding:20px;">
         <div class="container">
           <div class="titulo">
             <h5>Portáfolio</h5>
@@ -235,7 +198,6 @@
           <p class="">Copyright © 2020</p>
         </div>
       </div>
-
       <!-- scroll -->
       <script src="js/scroll.js"></script>
     </body>

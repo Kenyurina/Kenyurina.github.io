@@ -1,21 +1,31 @@
-body{ overflow-x:hidden; font-family: 'Montserrat', sans-serif;}  
+body{ 
+  overflow-x:hidden; 
+  font-family: 'Baloo Tammudu 2', cursive;
+}  
 
 /*COLORES DE LA PLANTILLA*/
-.color {
-  background-color: #fcf5f5!important; /*ROSA*/
-}
-.secondary_color{
-  background-color: black; /*NEGRO*/
-}
-.terceary_color{
-  color: #ffffff; /*BLANCO*/
-}
-.primary_color{
-  color: black; /*NEGRO*/
-}
 .borde{
   border-top: 1px solid #ffffff!important;
 }
+.color {
+  background-color: #fcf5f5!important; 
+}
+.menu{
+  background-color: black;
+}
+.primary_color{
+  color: black; 
+}
+.secondary_color{
+  background-color: black; 
+}
+.terceary_color{
+  color: #ffffff; 
+}
+.primary_back{
+  color: black;
+}
+
 
 /*ESTILOS TOPBAND*/
 .topband {
@@ -57,12 +67,12 @@ body{ overflow-x:hidden; font-family: 'Montserrat', sans-serif;}
   right:50%;
 }
 #menu li a {
-  font-size:12px; 
+  font-size:17px; 
   text-align:left;
 }
 #menu li a:hover { 
-  color:#fcf5f5!important; /*ROSA*/
-  background-color:transparent; 
+  color:#fcf5f5;
+  background-color:transparent!important; 
 }
 .dropdown-menu > li > a {
   padding: 3px 20px; 
@@ -94,12 +104,12 @@ body{ overflow-x:hidden; font-family: 'Montserrat', sans-serif;}
   margin-left:  15px; 
   margin-bottom: 8px; 
   border-radius: 0px;
-  background-color: #000000!important; /*ROSA*/
+  background-color: #000000!important; 
   background-image: none;
   border: 1px solid transparent;
 }
 .navbar-toggle span {
-  background-color: #ffffff!important; /* BLANCO*/
+  background-color: #ffffff!important; 
 }
 .navbar-default 
 .navbar-toggle:focus, 
@@ -131,100 +141,142 @@ body{ overflow-x:hidden; font-family: 'Montserrat', sans-serif;}
   }
 
 /* FOTO */
+.nombre{
+  text-align: center;
+}
 .center{
   width: 300px;
   margin: 0 auto;
 }
-
 /* SOCIAL */
 .social{
-  text-align: center;
   font-size: 17px;
+}
+.social h2{
+  padding-top: 30px;
 }
 .social div a{
   float: left;
   margin: 15px;
   width: 50px;
+}
 
-}
-.nombre{
-  text-align: center;
-}
 
 /*FULL IMAGEN*/
 .titulo {
   text-align: center;
+  padding: 30px;
 }
 .titulo h5{
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   text-transform: uppercase;
-  /* margin-top: 40px; */
 }
-.titulo hr {
-  border-top: 1px solid #000000; 
-  width: 100%;
-}
-
-/*FOOTER*/
-.footer {
-  padding-top: 40px;
-  padding-bottom: 80px;
-}
-.footer h4, a, p {
-  line-height: 20px;
-}
-.footer h4 {
-  font-weight: bold;
-}
-.footer a {
-  font-size: 12px;
-}
-.footer p {
-  font-size: 12px;
-}
-
 /* SKILLS */
+.skill-f p{
+  padding-top: 10px;
+  font-size: 20px;
+}
 .skills {
-  text-align: right; /* Right-align text */
-  padding-top: 2px; /* Add top padding */
-  padding-bottom: 2px; /* Add bottom padding */
-  color: black; /* White text color */
+  text-align: right; 
+  padding-top: 2px; 
+  padding-bottom: 2px; 
+  color: black; 
 }
-.html {width: 100%; background-color:#fcf5f5;} /* Green */
-.css {width: 80%; background-color:#fcf5f5;} /* Blue */
-.js {width:50%; background-color:#fcf5f5;} /* Red */
-.php {width: 20%; background-color:#fcf5f5;} /* Dark Grey */
-.skills2 {
-  text-align: right; /* Right-align text */
-  padding-top: 2px; /* Add top padding */
-  padding-bottom: 2px; /* Add bottom padding */
-  color: black; /* White text color */
+.html{
+  width: 100%; 
+  background-color:#000000;
+} 
+.css{
+  width: 80%; 
+  background-color:#000000;
+} 
+.js{
+  width:50%; 
+  background-color:#000000;
+} 
+.php{
+  width: 20%; 
+  background-color:#000000;
+} 
+.skills2{
+  text-align: right; 
+  padding-top: 2px;
+  padding-bottom: 2px; 
+  color: black; 
 }
-.html2 {width: 100%; background-color: #fcf5f5;} /* Green */
-.css2 {width: 80%; background-color: #fcf5f5;} /* Blue */
-.js2 {width:80%; background-color: #fcf5f5;} /* Red */
-.php2 {width: 50%; background-color: #fcf5f5;} /* Dark Grey */
-
+.html2{
+  width: 100%; 
+  background-color: #000000;
+} 
+.css2{
+  width: 80%; 
+  background-color: #000000;
+} 
+.js2{
+  width:80%; 
+  background-color: #000000;
+} 
+.php2{
+  width: 50%; 
+  background-color: #000000;
+} 
 /* PORTAFOLIO */
 .content {
+  box-shadow: 0px 0px 16px rgb(195, 195, 195);
   background-color: white;
   padding: 10px;
   margin: 10px;
 }
+.content:hover{
+  box-shadow: 0px 0px 15px rgb(195, 195, 195);
+	max-width: none;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.10);
+	transform: scale(1.10);
+}
 .content h4{
   font-weight: bold;
 }
-
+/* ICONOS REDES SOCIALES */
+.social a{
+  font-size:25px;
+  padding:3px;
+}
+.social a:hover{
+  color: #000000;
+}
+.fa-linkedin{
+  color: #000000;
+}
+.fa-instagram{
+  color: #000000;
+}
+.fa-twitter{
+  color: #000000;
+}
+.fa-youtube{
+  color: #000000;
+}
+.fa-facebook-official{
+  color: #000000;
+}
+.fa-github{
+  color: #000000;
+}
 /*ESTILOS FOOTBAND*/
 .footband {
+  background-color: #000000;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
 }
 .footband div {
-  padding: 35px;
+  font-size: 17px;
+  padding: 25px;
+  color: #ffffff;
 }
 
 
