@@ -41,8 +41,27 @@
           </div>
         </div>
       </div> -->
-      <!-- MENU -->
-      <nav id="myNavbar" class="navbar menu" role="navigation">
+      <!-- MENU -->      
+      <div class="wrapper">
+        <header>
+            <nav class="borde">
+              <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+              </div>
+              <div class="logo">
+                  <a href="index.html"><img class="" src="img/LogoRojo.png" alt="" style="width: 150px; height: 40px;"></a>
+              </div>
+              <div class="menu">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="">Blog</a></li>
+                  </ul>
+              </div>
+            </nav>
+        </header>
+      </div>
+      <!-- <nav id="myNavbar" class="navbar menu" role="navigation">
         <div class="navbar-header visible-xs"> 
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="sr-only">Toggle navigation</span>
@@ -68,7 +87,7 @@
             </div>
           </div>
         </div>
-      </nav> 
+      </nav>  -->
       <!-- FOTO -->
       <div class="row">
         <div class="container">
@@ -79,7 +98,7 @@
           </div> 
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <div class="social">     
-              <h2 >KEN CAMINO</h2> 
+              <h2 >Desarrolladora Web Frontend</h2> 
               <p>
                 Habilidad para el diseño web, capaz de transformar un <br>
                 archivo de photoshop  en código HTML, CSS, JavaScript,<br>  
@@ -124,6 +143,9 @@
 
               <p class="primary_color">React.js</p>
               <div class="skills php">20%</div>
+
+              <p class="primary_color">Bootstarp</p>
+              <div class="skills bootstrap">90%</div>             
            </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -139,6 +161,9 @@
 
               <p class="primary_color">UX/UI</p>
               <div class="skills2 php2">50%</div>
+
+              <p class="primary_color">WordPress Admin</p>
+              <div class="skills2 wordpress">50%</div>
             </div>
           </div>
         </div>
@@ -198,6 +223,26 @@
           <p class="">Copyright © 2020</p>
         </div>
       </div>
+      <!-- Menu -->
+      <script>
+        $(document).ready(function() {
+                 $(".menu-icon").on("click", function() {
+                       $("nav ul").toggleClass("showing");
+                 });
+           });
+     
+           // Scrolling Effect
+     
+           $(window).on("scroll", function() {
+                 if($(window).scrollTop()) {
+                       $('nav').addClass('black');
+                 }
+     
+                 else {
+                       $('nav').removeClass('black');
+                 }
+           });
+       </script>
       <!-- scroll -->
       <script src="js/scroll.js"></script>
     </body>
