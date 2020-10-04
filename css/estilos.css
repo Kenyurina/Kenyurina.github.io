@@ -10,9 +10,9 @@ body{
 .color {
   background-color: #fcf5f5!important; 
 }
-.menu{
-  background-color: black;
-}
+/* .menu{
+  box-shadow: 10px 5px 5px rgb(228, 228, 228);
+} */
 .primary_color{
   color: black; 
 }
@@ -25,39 +25,8 @@ body{
 .primary_back{
   color: black;
 }
+/* MENU */
 
-
-/*ESTILOS TOPBAND*/
-.topband {
-  height: 40px;
-}
-.topband a {
-  font-weight: bold;
-  margin-top: 15px; 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.identity {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.identity p {
-  margin-left: 20px;
-  margin-top: 15px;
-}
-.identity img {
-  margin-left: 10px;
-  margin-top: 15px;
-}
-
-.wrapper header {
-  height: 10vh;
-  /* width: 100%;
-  background: url(../img/3962104.png) no-repeat 50% 50%;
-  background-size: cover; */
-}
 .logo {
   line-height: 60px;
   position: fixed;
@@ -68,40 +37,45 @@ body{
   font-size: 20px;
   letter-spacing: 2px;
 }
-
+.wrapper header {
+  height: 10vh;
+  /* width: 100%;
+  background: url(../img/3962104.png) no-repeat 50% 50%;
+  background-size: cover; */
+}
+.menu-icon {
+  line-height: 80px;
+  width: 100%;
+  background: white; /*fondo del menu, responsive ipad iphone */
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: black;
+  display: none;
+}
 nav {
   position: fixed;
   width: 100%;
   line-height: 60px;
   z-index: 10;
 }
-.borde {
-  border-bottom: 1px solid rgba(255,255,255,0.25)!important;
-}
-
 nav ul {
+  box-shadow: 0px 0px 16px rgb(195, 195, 195);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
   line-height: 60px;
   list-style: none;
   background: white;
   overflow: hidden;
   color: #fff;
-  padding: 0;
   text-align: right;
-  margin: 0;
   padding-right: 40px;
   transition: 1s;
 }
-
-nav.black ul {
-  /* background: rgba(52, 156, 277, 0.6); */
-  height: 25px;
-}
-
 nav ul li {
   display: inline-block;
   padding: 20px 14px;
 }
-
 nav ul li a {
   text-decoration: none!important;
   color: black;
@@ -111,55 +85,42 @@ nav ul li a {
 nav ul li a:hover {
   color: #F71735!important; /*PLATINIUM*/
 }
-
-.menu-icon {
-  line-height: 80px;
-  width: 100%;
-  background: white;
-  text-align: right;
-  box-sizing: border-box;
-  padding: 15px 24px;
-  cursor: pointer;
-  color: black;
-  display: none;
+nav.black ul {
+  background: white; /* fondo del menu, scrooll */
+  height: 95px;
 }
 
-@media(max-width: 786px) {
+/* media queries */
 
-.logo {
-  position: fixed;
-  top: 0;
-  margin-top: 16px;
-}
-
-nav ul {
-  max-height: 2px;
-  background-color: white;
-}
-
-/*nav.black ul {
-  background: #000;
-}*/
-
-.showing {
-  max-height: 200em;
-}
-
-nav ul li {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0px;
-  text-align: right;
-}
-
-.menu-icon {
-  display: block;
-}
-
+@media(max-width: 786px){
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+  nav ul {
+    max-height: 2px;
+    background-color: white;
+  }
+  nav.black ul {
+    background: #000;
+  }
+  .showing {
+    max-height: 400em;
+  }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+  .menu-icon {
+    display: block;
+  }
 }
 
 /* ESTILOS DEL MENU */
-#menu {
+/* #menu {
   float:left; 
   left:50%; 
   list-style-type:none; 
@@ -244,7 +205,7 @@ nav ul li {
   #navbar { 
     text-align: center;
     } 
-  }
+  } */
 
 /* FOTO */
 .nombre{
