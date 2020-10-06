@@ -87,7 +87,7 @@ nav ul li a:hover {
 }
 nav.black ul {
   background: white; /* fondo del menu, scrooll */
-  height: 95px;
+  /* height: 95px; */
 }
 
 /* media queries */
@@ -103,7 +103,7 @@ nav.black ul {
     background-color: white;
   }
   nav.black ul {
-    background: #000;
+    /* background: #000; */
   }
   .showing {
     max-height: 400em;
